@@ -1,0 +1,44 @@
+[
+	{
+		"name": "php7.4-cli:e.aidalan.com",
+		"rootPath": "vscode-remote://attached-container+7b22636f6e7461696e65724e616d65223a222f706870372e342d636c69222c2273657474696e6773223a7b22636f6e74657874223a226465736b746f702d6c696e7578227d7d/work/web/e.aidalan.com",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "php7.4-cli:pkg.superdalan.com",
+		"rootPath": "vscode-remote://attached-container+7b22636f6e7461696e65724e616d65223a222f706870372e342d636c69222c2273657474696e6773223a7b22636f6e74657874223a226465736b746f702d6c696e7578227d7d/work/web/pkg.superdalan.com",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "php7.4-cli:oa.superdalan.com",
+		"rootPath": "vscode-remote://attached-container+7b22636f6e7461696e65724e616d65223a222f706870372e342d636c69222c2273657474696e6773223a7b22636f6e74657874223a226465736b746f702d6c696e7578227d7d/work/web/oa.superdalan.com",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "20.214:php8.2:huoshanyun.kit",
+		"rootPath": "vscode-remote://attached-container+7b22636f6e7461696e65724e616d65223a222f706870382e32222c2273657474696e6773223a7b22686f7374223a227463703a2f2f302e302e302e303a32333736227d7d@ssh-remote+214/work/web/huoshanyun.kit",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "php7.4-cli:cms.superdalan.com",
+		"rootPath": "vscode-remote://attached-container+7b22636f6e7461696e65724e616d65223a222f706870372e342d636c69222c2273657474696e6773223a7b22636f6e74657874223a226465736b746f702d6c696e7578227d7d/work/web/cms.superdalan.com",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "20.214:php8.2:l10.app",
+		"rootPath": "vscode-remote://attached-container+7b22636f6e7461696e65724e616d65223a222f706870382e32222c2273657474696e6773223a7b22686f7374223a227463703a2f2f302e302e302e303a32333736227d7d@ssh-remote+214/work/web/l10.app",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]
