@@ -1,0 +1,7 @@
+#!/bin/bash
+
+lang=$1
+action=$2
+version=$3
+
+cd ${lang} && make ${action} "${lang}_version"="${3}" && cd -
