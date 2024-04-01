@@ -1,0 +1,8 @@
+#!/bin/bash
+
+action=$1
+version=$2
+port=$3
+lang='php'
+
+cd ${lang} && make ${action} "${lang}_version"="${version}" "${lang}_port"="${port}" && cd - > /dev/null

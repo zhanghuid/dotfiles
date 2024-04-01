@@ -1,0 +1,8 @@
+#!/bin/bash
+
+action=$1
+version=$2
+port=$3
+lang='nginx'
+
+cd ${lang} && make ${action} "${lang}_version"="${version}" && cd -
