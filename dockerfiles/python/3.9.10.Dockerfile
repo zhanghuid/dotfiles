@@ -3,7 +3,7 @@ FROM python:3.9.10
 RUN mkdir /root/.pip || true
 COPY ./pip.conf /root/.pip/pip.conf
 
-ENV PS1="\e[37;40m\]\[\e[32;40m\]\u\[\e[37;40m\]@\h:\[\e[36;40m\]\w\[\e[0m\n\$ "
+RUN echo 'PS1="\[\e[37m\]\[\e[32m\]\u\[\e[37m\]@\h:\[\e[36m\]\w\[\e[0m\n\$ "' >> ~/.bashrc
 
 WORKDIR /work/web
 
