@@ -1,7 +1,7 @@
-FROM python:2.7.18
+FROM rust:1.77.2
 
-RUN mkdir /root/.pip || true
-COPY ./pip.conf /root/.pip/pip.conf
+RUN mkdir /root/.cargo || true
+COPY rust.config /root/.cargo/config
 
 ENV PS1="\e[37;40m\]\[\e[32;40m\]\u\[\e[37;40m\]@\h:\[\e[36;40m\]\w\[\e[0m\n\$ "
 

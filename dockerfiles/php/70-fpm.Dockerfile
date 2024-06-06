@@ -1,11 +1,11 @@
-FROM php:7.4-fpm as base
+FROM php:7.0-fpm as base
 LABEL maintainer="iamhuide@google.com"
+
+# 设置更新源
+COPY ./tencent.source /etc/apt/sources.list
 
 RUN apt-get clean all && apt-get update
 RUN apt install gnupg -y
-
-# 设置更新源
-COPY ./ali.debian.11.x.source /etc/apt/sources.list
 
 # RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6ED0E7B82643E131
 ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
@@ -26,6 +26,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
     exif \
     gd \
     intl \
+    memcached \
     mysqli \
     opcache \
     pdo_mysql \
@@ -36,7 +37,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
     zip \
     sockets\
     swoole\
-    memcached\
     mongodb\
     mcrypt
 # already installed:

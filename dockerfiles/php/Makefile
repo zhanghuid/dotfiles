@@ -26,7 +26,7 @@ help:
 
 ##@ [php-fpm]
 build: ## build php fpm container
-	docker build -f $(PHP_VERSON)-fpm.Dockerfile -t php-fpm:$(PHP_VERSON) .
+	docker build --no-cache -f $(PHP_VERSON)-fpm.Dockerfile -t php-fpm:$(PHP_VERSON) .
 
 run: ## [eg: phpcli run php_version_num php_port_num] \n up php fpm container and need to pass port number
 	docker run -itd --name php-fpm.$(PHP_VERSON) -p ${PHP_PORT}:9000  -v ~/web/dalan:/work/web -v ~/web:/work/apps php-fpm:$(PHP_VERSON)

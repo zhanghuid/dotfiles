@@ -29,7 +29,7 @@ build-amd64: ## build node container
 
 
 run: ## up node container
-	docker run -itd --name node.$(NODE_VERSON)  -v ~/web/dalan:/work/web node:$(NODE_VERSON)
+	docker run -itd --name node.$(NODE_VERSON)  -v ~/web/dalan:/work/web -v ~/web:/work/apps node:$(NODE_VERSON)
 
 exec: ## exec node container
 	docker exec -it node.$(NODE_VERSON) bash

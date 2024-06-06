@@ -6,6 +6,7 @@
 
 ### before use
 ```bash
+chmod +x cli
 chmod +x phpcli
 chmod +x nginxcli
 ```
